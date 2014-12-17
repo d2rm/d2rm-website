@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DOTA 2 Replay Manager</title>
+        <!-- meta -->
+        <meta property="og:url" content="http://d2rm.github.io/" />
+        <meta property="og:title" content="DOTA 2 Replay Manager" />
+        <meta property="og:image" content="http://d2rm.github.io/images/screenshot.png" />
+        <meta property="og:description" content="DOTA 2 Replay Manager is an application for Windows, Mac and Linux that lets you parse and manage your DOTA 2 replays. It requires no sign up and displays no ads." />
+        <meta property="og:site_name" content="DOTA 2 Replay Manager" />
+        <meta property="og:ttl" content="3600" />
+
+        <!-- styles -->
+        <link href="public/css/global.css" rel="stylesheet">
+        <link href="public/css/index.css" rel="stylesheet">
+
+        <link rel="shortcut icon" type="image/png" href="public/images/icon.png"/>
+
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="public/js/index.js"></script>
+    </head>
+
+    <body>
+  
+    <!--<a href="https://github.com/Atraci/Atraci"><img style="position: fixed; top: 0; left: 0; border: 0;z-index: 9999;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>-->
+
+        <!--<div id="header-container">-->
+            <!--<div id="header">-->
+                <!--<div class="SocialIconsContainer">-->
+                    <!--<a href="https://www.facebook.com/GetAtraci" target="_blank"><i class="facebook icon"></i></a>-->
+                    <!--<a href="https://twitter.com/AtraciApp" target="_blank"><i class="twitter icon"></i></a>-->
+                    <!--<a href="https://github.com/Atraci/Atraci" target="_blank"><i class="github icon"></i></a>-->
+                <!--</div>-->
+                <!--<div id="share_buttons">-->
+          <!--<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGetAtraci&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=534831413243790" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px; padding-top: 1px" allowTransparency="true"></iframe>-->
+
+                    <!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://d2rm.github.io" data-text="DOTA 2 Replay Manager - Manager your DOTA 2 replays" data-via="atraciapp" data-hashtags="music, atraci" data-dnt="true" data-related="AtraciApp">Tweet</a>-->
+                    <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
+
+                    <!--<div class="g-plusone" data-size="medium" data-href="http://getatraci.net"></div>-->
+                    <!--<script type="text/javascript">-->
+                      <!--(function() {-->
+                        <!--var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;-->
+                        <!--po.src = 'https://apis.google.com/js/platform.js';-->
+                        <!--var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);-->
+                      <!--})();-->
+                    <!--</script>-->
+                    <!--<script src="//platform.linkedin.com/in.js" type="text/javascript">-->
+  <!--lang: en_US-->
+<!--</script>-->
+<!--<script type="IN/FollowCompany" data-id="5321114" data-counter="right"></script>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div id="big-container">
+            <div id="tagline-container">
+                <div id="tagline1">Manager your DOTA 2 replays.</div>
+                <div id="tagline2">100% Free. No Ads. No Sign up.</div>
+                <div id="download">
+                    <a href="#" class="button">
+                        <span>Download DOTA 2 Replay Manager</span>
+                    </a>
+                    <div id="version_info"> </div>
+                </div>
+                <div id="donation-container">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        <div id="screenshot"></div>
+
+        <div id="description">
+            <span style="color: black; font-weight: normal;">DOTA 2 Replay Manager is an application for Windows, Mac and Linux that lets you parse and manage your DOTA 2 replays. It requires no sign up and displays no ads.</span>
+            <br><br>
+            I love DOTA 2 and have been playing DotA since before it was cool. In all this time, I found that the best way for me to improve was to analyze and watch replays.
+            <br><br>
+            That is the basic principle of the DOTA 2 Replay Manager - make it simple to analyze and watch your DOTA 2 replays.
+            <br><br>
+            Valve has done an amazing job creating DOTA 2 but sadly their replay management system is non-existent so that is why I decided to create the DOTA 2 Replay Manager.
+            <br><br>
+            Don't forget to share the love; you may not need the DOTA 2 Replay Manager, but some of your friends might.
+            <br><br>
+            If you would like to help out with translation or find any bugs don't hesitate to create an issue ticket on <a href="https://github.com/d2rm/d2rm">github</a>.
+            <br><br>
+            Finally, since I am the one and only developer of this application, I implore you, if you can donate any sum of money, it would be greatly appreciated and go directly towards further development and new features.
+            <br><br>
+            -- Pavel Yarmak
+        </div>
+
+
+
+
+    <script>
+        jQuery(document).ready(function() {
+            // TODO
+            // make this with github API later
+            var version = '0.0.1';
+            var userAgent = navigator.platform;
+            var mac = /Mac/,
+                win = /Win/,
+                lin = /Lin/,
+                lin64 = /x86_64/,
+                prefix = 'https://github.com/d2rm/d2rm/releases/download/' + version + '/';
+            if (mac.test(userAgent)) {
+                $('#download a').attr('href', '#');
+                $('#download #version_info').text('Mac version not yet available.');
+            } else if (win.test(userAgent)) {
+                $('#download a').attr('href', prefix + 'D2RM.exe');
+                $('#download #version_info').text('Version ' + version + ' for Windows');
+            } else if (lin.test(userAgent)) {
+                if (lin64.test(userAgent)) {
+                    $('#download a').attr('#');
+                    $('#download #version_info').text('64-bit Linux version not yet available.');
+                } else {
+                    $('#download a').attr('#');
+                    $('#download #version_info').text('32-bit Linux version not yet available.');
+                }
+            }
+        });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-47599004-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    </body>
+<footer>
+    <p>DOTA 2 and all related materials are property of Valve.</p>
+</footer>
+</html>
+
