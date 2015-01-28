@@ -2,8 +2,8 @@ $(document).ready(function() {
 
   // theme roller
   var $bigContainer = $('#big-container');
-  //var themeIndex = Math.floor(Math.random() * 100) % 7;
-  var themeIndex = 0;
+  var themeIndex = Math.floor(Math.random() * 100) % 7;
   $bigContainer.css('background-image',
-    'url(public/images/tagline_background_' + themeIndex + '.jpg)');
+    'url(public/images/backgrounds/tagline_background_' + themeIndex + '.jpg)');
+  $(".owl-carousel").owlCarousel({singleItem: true, navigation: true, autoPlay: true, stopOnHover: true, slideSpeed: 600});
 });

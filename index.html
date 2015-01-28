@@ -16,46 +16,22 @@
         <!-- styles -->
         <link href="public/css/global.css" rel="stylesheet">
         <link href="public/css/index.css" rel="stylesheet">
+        <link href="public/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="public/owl-carousel/owl.theme.css" rel="stylesheet">
+        <link href="public/css/bootstrap.min.css" rel="stylesheet">
 
         <link rel="shortcut icon" type="image/png" href="public/images/icon.png"/>
 
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="public/js/index.js"></script>
+        <script src="public/owl-carousel/owl.carousel.min.js"></script>
+        <script src="public/js/bootstrap.min.js"></script>
     </head>
 
     <body>
   
-    <!--<a href="https://github.com/Atraci/Atraci"><img style="position: fixed; top: 0; left: 0; border: 0;z-index: 9999;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>-->
-
-        <!--<div id="header-container">-->
-            <!--<div id="header">-->
-                <!--<div class="SocialIconsContainer">-->
-                    <!--<a href="https://www.facebook.com/GetAtraci" target="_blank"><i class="facebook icon"></i></a>-->
-                    <!--<a href="https://twitter.com/AtraciApp" target="_blank"><i class="twitter icon"></i></a>-->
-                    <!--<a href="https://github.com/Atraci/Atraci" target="_blank"><i class="github icon"></i></a>-->
-                <!--</div>-->
-                <!--<div id="share_buttons">-->
-          <!--<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGetAtraci&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=534831413243790" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px; padding-top: 1px" allowTransparency="true"></iframe>-->
-
-                    <!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://d2rm.github.io" data-text="DOTA 2 Replay Manager - Manager your DOTA 2 replays" data-via="atraciapp" data-hashtags="music, atraci" data-dnt="true" data-related="AtraciApp">Tweet</a>-->
-                    <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
-
-                    <!--<div class="g-plusone" data-size="medium" data-href="http://getatraci.net"></div>-->
-                    <!--<script type="text/javascript">-->
-                      <!--(function() {-->
-                        <!--var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;-->
-                        <!--po.src = 'https://apis.google.com/js/platform.js';-->
-                        <!--var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);-->
-                      <!--})();-->
-                    <!--</script>-->
-                    <!--<script src="//platform.linkedin.com/in.js" type="text/javascript">-->
-  <!--lang: en_US-->
-<!--</script>-->
-<!--<script type="IN/FollowCompany" data-id="5321114" data-counter="right"></script>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+    <a href="https://github.com/d2rm/d2rm"><img style="position: fixed; top: 0; left: 0; border: 0;z-index: 9999;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
 
         <div id="big-container">
             <div id="tagline-container">
@@ -76,10 +52,22 @@
                     </form>
                 </div>
             </div>
-        <div id="screenshot"></div>
+            
+        <div class="owl-carousel">
+            <img src="public/images/screenshots/mmr.png">
+            <img src="public/images/screenshots/themes.png">
+            <img src="public/images/screenshots/heatmap.png">
+            <img src="public/images/screenshots/heroes.PNG">
+            <img src="public/images/screenshots/language.PNG">
+            <img src="public/images/screenshots/matches.PNG">
+            <img src="public/images/screenshots/player_matches.PNG">
+            <img src="public/images/screenshots/settings.PNG">
+            <img src="public/images/screenshots/teammates.PNG">
+            <img src="public/images/screenshots/tracked.PNG">
+        </div>
 
         <div id="description">
-            <span style="color: black; font-weight: normal;">DOTA 2 Replay Manager is an application for Windows, Mac and Linux that lets you parse and manage your DOTA 2 replays. It requires no sign up and displays no ads.</span>
+            <span style="color: black; font-weight: normal;">DOTA 2 Replay Manager is an open source application for Windows, Mac and Linux that lets you parse and manage your DOTA 2 replays. It requires no sign up and displays no ads.</span>
             <br><br>
             I love DOTA 2 and have been playing DotA since before it was cool. In all this time, I found that the best way for me to improve was to analyze and watch replays.
             <br><br>
@@ -95,14 +83,15 @@
             <br><br>
             Things that donations could fund:
             <ul>
-                <li>&nbsp;- Mac and Linux versions</li>
-                <li>&nbsp;- Watched replay history feature</li>
+                <li>&nbsp;- Graphs, graphs and more graphs!</li>
+                <li>&nbsp;- Heatmaps (e.g. vision, movement, deaths, etc.)</li>
                 <li>&nbsp;- Naming replays</li>
                 <li>&nbsp;- Adding descriptions to replays</li>
-                <li>&nbsp;- Ability to organize replays into groups</li>
-                <li>&nbsp;- Code cleanup, optimization, and open sourcing</li>
+                <li>&nbsp;- Code cleanup, performance optimization and dependency updates</li>
             </ul>
             <br>
+            Future development will be dependant on your support.
+            <br><br>
             -- Pavel Yarmak (dota2replaymanager [at] gmail.com)
         </div>
 
@@ -111,9 +100,7 @@
 
     <script>
         jQuery(document).ready(function() {
-            // TODO
-            // make this with github API later
-            var version = '0.1.0';
+            var version = '0.2.0';
             var userAgent = navigator.platform;
             var mac = /Mac/,
                 win = /Win/,
@@ -121,20 +108,17 @@
                 lin64 = /x86_64/,
                 prefix = 'https://github.com/d2rm/d2rm/releases/download/' + version + '/';
             if (mac.test(userAgent)) {
-                $('#download a').attr('href', '#');
-                $('#download #version_info').text('Mac version not yet available.');
+                $('#download a').attr('href', '#').attr('title', 'Mac version not yet available.');
             } else if (win.test(userAgent)) {
-                $('#download a').attr('href', prefix + 'D2RM.exe');
-                $('#download #version_info').text('Version ' + version + ' for Windows');
+                $('#download a').attr('href', prefix + 'D2RM.exe').attr('title', 'Version ' + version + ' for Windows');
             } else if (lin.test(userAgent)) {
                 if (lin64.test(userAgent)) {
-                    $('#download a').attr('#');
-                    $('#download #version_info').text('64-bit Linux version not yet available.');
+                    $('#download a').attr('href', prefix + 'D2RM-linux64.tar.gz').attr('title', 'Version ' + version + ' for 64-bit linux');
                 } else {
-                    $('#download a').attr('#');
-                    $('#download #version_info').text('32-bit Linux version not yet available.');
+                    $('#download a').attr('href', prefix + 'D2RM-linux32.tar.gz').attr('title', 'Version ' + version + ' for 32-bit linux');
                 }
             }
+            $('#download a').tooltip();
         });
     </script>
     <script>

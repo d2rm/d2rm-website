@@ -38,7 +38,8 @@
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
 /* line 24, ../sass/_download.sass */
-.button:hover span {
+.button:hover span, .button:focus span {
+  color: #ffffff;
   background: linear-gradient(to bottom, #32b9ff 0%, #138ccc 100%);
 }
 /* line 26, ../sass/_download.sass */
@@ -130,19 +131,18 @@ body #big-container #tagline-container #download #version_info {
   margin-top: 15px;
   font-size: 14px;
 }
-/* line 80, ../sass/main.sass */
-html #big-container #screenshot,
-body #big-container #screenshot {
-  width: 900px;
-  height: 569px;
-  margin-bottom: 90px;
-  background-image: url(../images/screenshot.png);
+#big-container .owl-carousel {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 890px;
+}
+.owl-carousel .owl-wrapper-outer {
   -webkit-box-shadow: black 0 15px 80px;
   -moz-box-shadow: black 0 15px 80px;
   box-shadow: black 0 15px 80px;
-  background-size: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 0;
+  margin-bottom: 50px;
 }
 /* line 90, ../sass/main.sass */
 html #description,
